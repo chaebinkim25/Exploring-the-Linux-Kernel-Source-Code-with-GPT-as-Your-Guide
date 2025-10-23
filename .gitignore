@@ -1,0 +1,61 @@
+# 빌드 및 컴파일 결과물
+*.o
+*.ko
+*.mod
+*.mod.c
+*.symvers
+*.order
+.tmp_versions/
+Module.symvers
+modules.order
+
+# 커널 빌드 관련
+vmlinux
+vmlinux.bin
+bzImage
+zImage
+System.map
+.config
+.config.old
+
+# 에디터 및 IDE
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 임시 파일
+/tmp/
+*.tmp
+
+# 패치 파일
+*.patch
+*.diff
+
+# 테스트 빌드
+test_*
+example_*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# 백업 파일
+*.bak
+*.backup
