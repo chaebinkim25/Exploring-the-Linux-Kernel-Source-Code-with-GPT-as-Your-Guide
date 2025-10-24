@@ -10,14 +10,20 @@
 
 이 전자책은 리눅스 커널의 핵심 서브시스템을 체계적으로 다룹니다:
 
-1. **[소개](docs/00-introduction.md)** - 리눅스 커널과 학습 방법
-2. **[커널 아키텍처](docs/01-kernel-architecture.md)** - 커널의 전체 구조와 주요 구성 요소
-3. **[프로세스 관리](docs/02-process-management.md)** - 프로세스 생성, 스케줄링, IPC
-4. **[메모리 관리](docs/03-memory-management.md)** - 가상 메모리, 페이징, 메모리 할당
-5. **[파일 시스템](docs/04-file-systems.md)** - VFS와 파일 시스템 구현
-6. **[장치 드라이버](docs/05-device-drivers.md)** - 하드웨어와 커널의 인터페이스
-7. **[네트워킹](docs/06-networking.md)** - 네트워크 스택과 소켓 프로그래밍
-8. **[결론 및 참고 자료](docs/07-conclusion.md)** - 추가 학습 자료와 경력 개발
+1. **[여행을 떠나기 전에](docs/00-introduction.md)** - 커널 탐험의 준비
+   - 리눅스 커널은 무엇인가
+   - 운영체제의 구조 복습: 유저 모드 vs 커널 모드
+   - 커널 소스 트리 한눈에 보기 (`/init`, `/kernel`, `/mm`, `/fs`, `/drivers`)
+   - 빌드 환경 구축 (WSL, Ubuntu, QEMU, gdb)
+   - "Hello Kernel!": 커널 모듈 첫 빌드 & 로드
+
+3. **[커널 아키텍처](docs/01-kernel-architecture.md)** - 커널의 전체 구조와 주요 구성 요소
+4. **[프로세스 관리](docs/02-process-management.md)** - 프로세스 생성, 스케줄링, IPC
+5. **[메모리 관리](docs/03-memory-management.md)** - 가상 메모리, 페이징, 메모리 할당
+6. **[파일 시스템](docs/04-file-systems.md)** - VFS와 파일 시스템 구현
+7. **[장치 드라이버](docs/05-device-drivers.md)** - 하드웨어와 커널의 인터페이스
+8. **[네트워킹](docs/06-networking.md)** - 네트워크 스택과 소켓 프로그래밍
+9. **[결론 및 참고 자료](docs/07-conclusion.md)** - 추가 학습 자료와 경력 개발
 
 📖 **[전자책 읽기 시작하기 →](docs/index.md)**
 
