@@ -17,7 +17,9 @@
    - 빌드 환경 구축 (WSL, Ubuntu, QEMU, gdb)
    - "Hello Kernel!": 커널 모듈 첫 빌드 & 로드
 
-3. **[커널 아키텍처](docs/01-kernel-architecture.md)** - 커널의 전체 구조와 주요 구성 요소
+2. **[프로세스의 비다](docs/02-process-management.md)** - `task_struct`의 항해
+   - 프로세스 생성: `fork()`, `clone()`, `copy_process()`
+   - 
 4. **[프로세스 관리](docs/02-process-management.md)** - 프로세스 생성, 스케줄링, IPC
 5. **[메모리 관리](docs/03-memory-management.md)** - 가상 메모리, 페이징, 메모리 할당
 6. **[파일 시스템](docs/04-file-systems.md)** - VFS와 파일 시스템 구현
