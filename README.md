@@ -19,9 +19,18 @@
 
 2. **[프로세스의 비다](docs/02-process-management.md)** - `task_struct`의 항해
    - 프로세스 생성: `fork()`, `clone()`, `copy_process()`
-   - 
-4. **[프로세스 관리](docs/02-process-management.md)** - 프로세스 생성, 스케줄링, IPC
-5. **[메모리 관리](docs/03-memory-management.md)** - 가상 메모리, 페이징, 메모리 할당
+   - 스케줄링의 비밀: CFS (Completely Fair Scheduler)
+   - 컨텍스트 스위칭, runqueue, tickless cheduling
+   - 프로세스 종료와 시그널 처리
+   - `ps`, `top`, `/proc`을 통한 내부 구조 관찰
+     
+3. **[메모리 행성](docs/03-memory-management.md)** - `mm_struct`와 페이지의 세계
+   - 가상 메모리의 구조와 페이지 테이블
+   - 물리 메모리 관리: buddy allocator
+   - slab/slub/slob allocator 비교
+   - demand paging과 page fault 처리
+   - `vm_area_struct` 실제 분석
+     
 6. **[파일 시스템](docs/04-file-systems.md)** - VFS와 파일 시스템 구현
 7. **[장치 드라이버](docs/05-device-drivers.md)** - 하드웨어와 커널의 인터페이스
 8. **[네트워킹](docs/06-networking.md)** - 네트워크 스택과 소켓 프로그래밍
