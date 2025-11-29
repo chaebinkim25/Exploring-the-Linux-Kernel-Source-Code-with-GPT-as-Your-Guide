@@ -2,6 +2,10 @@
 
 ## Exploring the Linux Kernel Source Code with GPT as Your Guide
 
+프로세스, 메모리, 스케줄러, 그리고 커널의 심장 속으로
+
+AI와 인간이 함께 푸는 커널의 비밀
+
 리눅스 커널을 이해하고 싶은 개발자들을 위한 전자책입니다. GPT를 활용하여 복잡한 커널 코드를 효율적으로 학습하는 방법을 제시합니다.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -31,10 +35,42 @@
    - demand paging과 page fault 처리
    - `vm_area_struct` 실제 분석
      
-6. **[파일 시스템](docs/04-file-systems.md)** - VFS와 파일 시스템 구현
-7. **[장치 드라이버](docs/05-device-drivers.md)** - 하드웨어와 커널의 인터페이스
-8. **[네트워킹](docs/06-networking.md)** - 네트워크 스택과 소켓 프로그래밍
-9. **[결론 및 참고 자료](docs/07-conclusion.md)** - 추가 학습 자료와 경력 개발
+4. **[파일 시스템 은하](docs/04-file-systems.md)** - `inode`와 `dentry` 탐사
+   - `inode` 구조체와 파일의 정체
+   - `ext4` 내부 동작
+   - VFS(Virtual File System) 추상화 구조
+   - 시스템 콜 흐름 따라가기 (`open() → sys_open() → vfs_open()`)
+
+5. **[장치 드라이버의 정글](docs/05-device-drivers.md)** - 하드웨어로 향하는 길
+   - 문자 장치 vs 블록 장치
+   - `file_operations`와 커널 인터페이스
+   - `/dev`와 `udev`의 비밀
+   - 간단한 커널 모듈 드라이버 작성
+   - IRQ와 인터럽트 핸들링의 흐름
+
+6. **[커널의 심장](docs/06-schedular.md)** - 스케줄러, 인터럽트, 동기화
+   - 인터럽트 컨텍스트 vs 프로세스 컨텍스트
+   - softirq, tasklet, workqueue
+   - 스핀락, 세마포어, mutex
+   - preemption과 SMP 환경의 도전
+   - RCU(Read-Copy-Update)와 최신 커널 병렬화 기법
+  
+7. **커널 디버깅과 해킹** - 커널을 "읽는" 기술
+   - `printk()`, `dmesg`, `ftrace`, `perf`, `kprobe`
+   - gdb + QEMU로 커널 내부 탐험
+   - crash dump 분석 (`/proc/kcore`)
+   - CVE 사례로 보는 커널 취약점 이해
+   - "리눅스 커널 워게임" 미션 (실습형 챕터)
+
+8. **우주 끝의 커널** - 최신 기술과 철학
+   - eBPF, io_uring, Rust for Linux
+   - LTS vs mainline 커널의 생태
+   - Linus의 커밋 철학과 커뮤니티 운영
+   - 커널 해커들의 개발 문화
+   - "커널을 이해하는 법" - 인간과 AI의 협업
+
+9. **[네트워킹](docs/06-networking.md)** - 네트워크 스택과 소켓 프로그래밍
+10. **[결론 및 참고 자료](docs/07-conclusion.md)** - 추가 학습 자료와 경력 개발
 
 📖 **[전자책 읽기 시작하기 →](docs/index.md)**
 
